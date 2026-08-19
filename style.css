@@ -1,0 +1,172 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body{
+    background-color: burlywood;
+    color:#fff;
+    min-height:100vh;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(10px);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:red;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+}
+
+/* Upload Section */
+.upload-section{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.upload-box{
+    width:400px;
+    background:white;
+    color:black;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+input[type=file]{
+    width:100%;
+    margin:20px 0;
+}
+
+#preview{
+    width:300px;
+    height:300px;
+    object-fit:cover;
+    display:none;
+    margin:auto;
+    border-radius:15px;
+    border:2px solid #ddd;
+}
+
+/* Button */
+button{
+    margin-top:20px;
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:burlywood;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:burlywood;
+    transform:scale(1.03);
+}
+
+/* Result */
+.result{
+    text-align:center;
+    padding:40px;
+}
+
+#resultBox{
+    margin:20px auto;
+    width:80%;
+    max-width:700px;
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:15px;
+    min-height:120px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    background:rgba(255,255,255,0.15);
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:10px;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .upload-box{
+        width:90%;
+    }
+
+    #preview{
+        width:100%;
+        height:auto;
+    }
+}
